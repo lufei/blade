@@ -84,7 +84,7 @@ class CompilerEngine extends PhpEngine
      */
     protected function getMessage(Throwable $e)
     {
-        return $e->getMessage() . ' (View: ' . realpath(last($this->lastCompiled)) . ')';
+        return $e->getMessage() . ' in ' . realpath(last($this->lastCompiled)) . ' on line ' . $e->getLine();
     }
 
     /**

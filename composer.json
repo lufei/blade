@@ -1,25 +1,33 @@
 {
-    "name": "luoyy/blade",
-    "description": "an independent version of laravel view template - blade",
-    "license": "MIT",
-    "homepage": "http://www.luoyy.com",
-    "support": {
-        "issues": "https://github.com/zishang520/blade/issues",
-        "source": "https://github.com/zishang520/blade"
+  "name": "sy-records/blade",
+  "description": "an independent version of laravel view template - blade",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/lufei/blade/issues",
+    "source": "https://github.com/lufei/blade"
+  },
+  "authors": [
+    {
+      "name": "luoyy",
+      "email": "zishang520@gmail.com"
     },
-    "authors": [{
-        "name": "luoyy",
-        "email": "zishang520@gmail.com"
-    }],
-    "require": {
-        "php": "^7.2.5"
-    },
-    "autoload": {
-        "files": [
-            "src/helpers.php"
-        ],
-        "psr-4": {
-            "luoyy\\Blade\\": "src/"
-        }
+    {
+      "name": "Lu Fei",
+      "email": "52o@qq52o.cn"
     }
+  ],
+  "require": {
+    "php": "^7.2.5"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "luoyy\\Blade\\": "src/"
+    }
+  },
+  "replace": {
+    "luoyy/blade": "7.*"
+  }
 }
